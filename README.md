@@ -14,7 +14,7 @@ Create a nice theme out of this.
 Thanks.  
 
 
-Designed By
+Developed By
 -----------------
 
 http://twitter.com/tubiz
