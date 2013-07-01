@@ -53,7 +53,6 @@
 	    wp_enqueue_script(  'modernizr');
 	    wp_enqueue_script( 'jquery' );
 	    wp_enqueue_script( 'gumby' );
-	    wp_enqueue_script( 'fitvids' );
 
 		wp_register_style('gumby', get_template_directory_uri().'/css/gumby.css','1.0', 'all');
 
