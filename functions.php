@@ -49,7 +49,6 @@
 
 	    wp_register_script('modernizr', get_template_directory_uri().'/js/modernizr-2.6.2.min.js','1.0', 'all');
 		wp_register_script('gumby', get_template_directory_uri().'/js/gumby.min.js','1.0', 'all', true);
-	    wp_register_script('gumby-init', get_template_directory_uri().'/js/gumby.init.js','1.0', 'all');
 
 	    wp_enqueue_script(  'modernizr');
 	    wp_enqueue_script( 'jquery' );
