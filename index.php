@@ -6,7 +6,7 @@
 		<div id="content">
 			<?php if ( have_posts() ) : ?>
 				<div class="row">
-				<h3>Latest Posts</h3>
+				<h3>All Posts</h3>
 					<?php while ( have_posts() ) : the_post(); ?>
 						<div class="twelve columns">
 							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
