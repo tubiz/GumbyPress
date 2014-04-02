@@ -45,7 +45,7 @@
 	function gp_load_style_scripts() {
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply' );
-		}  
+		}
 
 	    wp_register_script('modernizr', get_template_directory_uri().'/js/modernizr-2.6.2.min.js','1.0', 'all');
 		wp_register_script('gumby', get_template_directory_uri().'/js/gumby.min.js','1.0', 'all', true);
@@ -62,16 +62,16 @@
 
 	}
 	add_action( 'wp_enqueue_scripts', 'gp_load_style_scripts' );
-	
+
 	//Walker Class - This add support for the dropdown menu in the Gumbyframework
 	class Walker_Page_Custom extends Walker_Nav_menu{
 
-		function start_lvl(&$output, $depth){
+		function start_lvl(&$output, $depth=0, $args=array()){
 			$indent = str_repeat("\t", $depth);
 			$output .= "\n$indent<div class=\"dropdown\"><ul>\n";
 		}
 
-		function end_lvl(&$output , $depth){
+		function end_lvl(&$output , $depth=0, $args=array()){
 			$indent = str_repeat("\t", $depth);
 			$output .= "$indent</ul></div>\n";
 		}
